@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../practice 24/images/hbdz.png">
+  <link rel="stylesheet" href="../practice 24/CSS/normalize.css">
+  <link rel="stylesheet" href="../practice 24/CSS/all.min.css">
+  <link rel="stylesheet" href="../practice 24/CSS/dashboard.css">
+  <link rel="stylesheet" href="../practice 24/CSS/framework.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <title>Dashboard Page</title>
+</head>
+<body>
+  <div class="page">
+    <div class="side-bar p-relative">
+      <div class="head">
+        <a href="dashboard.html" class="logo">HbDz</a>
+      </div>
+      <ul class="links">
+        <li class="active">
+          <a href="dashboard.html">
+            <i class="fa-solid fa-chart-bar fa-fw"></i>
+            <p>Dashboard</p>
+          </a>
+        </li>
+        <li>
+          <a href="settings.html">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <p>Settings</p>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <p>Profile</p>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <p>Projects</p>
+          </a>
+        </li>
+        <li>
+          <a href="courses.html">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <p>Courses</p>
+          </a>
+        </li>
+        <li>
+          <a href="friends.html">
+            <i class="fa-solid fa-user-group fa-fw"></i>
+            <p>Friends</p>
+          </a>
+        </li>
+        <li>
+          <a href="files.html">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <p>Files</p>
+          </a>
+        </li>
+        <li>
+          <a href="plans.html">
+            <i class="fa-solid fa-ruler fa-fw"></i>
+            <p>Plans</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="head">
+        <div class="inputs">
+          <input type="text" placeholder="Type Keyword">
+        </div>
+        <div class="notifs">
+          <i class="fa-regular fa-bell fa-fw"></i>
+          <img src="../practice 24/images/avatar.png" alt="">
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="title">
+          <h2>Dashbord</h2>
+        </div>
+        <div class="cards">
+          <div class="card card-style" id="first">
+            <div class="head">
+              <h3>Welcome</h3>
+              <p>HbDz</p>
+            </div>
+            <img class="avr" src="../practice 24/images/avatar.png" alt="">
+            <div class="info">
+              <div class="boxes">
+                <div class="box">
+                  <h4>Hamza Benai</h4>
+                  <p>Developer</p>
+                </div>
+                <div class="box">
+                  <h4>80</h4>
+                  <p>Projects</p>
+                </div>
+                <div class="box">
+                  <h4>8500$</h4>
+                  <p>Earned</p>
+                </div>
+              </div>
+              <button class="btn bg-blue">Profile</button>
+            </div>
+          </div>
+          <div class="card card-style" id="seconde">
+            <div class="head">
+              <h3>Quick Draft</h3>
+              <p>Write a Draft For Your Ideas</p>
+            </div>
+            <div class="info">
+              <input type="text" placeholder="Title">
+              <textarea placeholder="Your Thought" cols="30" rows="5"></textarea>
+              <button class="btn bg-blue">Save</button>
+            </div>
+          </div>
+          <div class="card card-style" id="third" >
+            <div class="head">
+              <h3>Yearly Targets</h3>
+              <p>Targets Of The Year</p>
+            </div>
+            <div class="info">
+              <div class="targets">
+                <div class="target">
+                  <div class="icon" id="first-icon"><i class="fa-solid fa-dollar-sign fa-fw"></i></div>
+                  <div class="details">
+                    <p>Money</p>
+                    <p class="value">20.000$</p>
+                    <div class="prog" id="one">
+                      <span style="width : 80%" data-prgress="80%"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="target">
+                  <div class="icon" id="seconde-icon"><i class="fa-solid fa-code fa-fw"></i></div>
+                  <div class="details">
+                    <p>Projects</p>
+                    <p class="value">24</p>
+                    <div class="prog" id="two">
+                      <span style="width : 55%" data-prgress="55%"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="target">
+                  <div class="icon" id="third-icon"><i class="fa-solid fa-user fa-fw"></i></div>
+                  <div class="details">
+                    <p>Team</p>
+                    <p class="value">12</p>
+                    <div class="prog" id="three">
+                      <span style="width : 75%" data-prgress="75%"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-style" id="forth" >
+            <div class="head">
+              <h3>Teckets Statistics</h3>
+              <p>Everything About Support Tickets</p>
+            </div>
+            <div class="info">
+              <div class="boxes">
+                <div class="box" id="b-1">
+                  <i class="fa-regular fa-newspaper fa-fw"></i>
+                  <p class="nbr">2500</p>
+                  <p>Total</p>
+                </div>
+                <div class="box" id="b-2">
+                  <i class="fa-solid fa-spinner fa-fw"></i>
+                  <p class="nbr">500</p>
+                  <p>Pending</p>
+                </div>
+                <div class="box" id="b-3">
+                  <i class="fa-regular fa-circle-check fa-fw"></i>
+                  <p class="nbr">1900</p>
+                  <p>Closed</p>
+                </div>
+                <div class="box" id="b-4">
+                  <i class="fa-regular fa-circle-xmark fa-fw"></i>
+                  <p class="nbr">100</p>
+                  <p>Deleted</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-style" id="fifth" >
+            <div class="head">
+              <h3>Latest News</h3>
+            </div>
+            <div class="info">
+              <div class="articles">
+                <div class="article">
+                  <img src="../practice 24/images/news-01.png" alt="">
+                  <div class="details">
+                    <h3 class="title">Created SASS Section</h3>
+                    <p>New SASS Examples & Tutorials</p>
+                  </div>
+                </div>
+                <div class="article">
+                  <img src="../practice 24/images/news-02.png" alt="">
+                  <div class="details">
+                    <h3 class="title">Changed The Design</h3>
+                    <p>A Brand New Website Design</p>
+                  </div>
+                </div>
+                <div class="article">
+                  <img src="../practice 24/images/news-03.png" alt="">
+                  <div class="details">
+                    <h3 class="title">Team Increased</h3>
+                    <p>3 Devolopers Joined The Team</p>
+                  </div>
+                </div>
+                <div class="article" id="last-article">
+                  <img src="../practice 24/images/news-04.png" alt="">
+                  <div class="details">
+                    <h3 class="title">Add Payment Gateway</h3>
+                    <p>Many New Payment Gateways Added</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-style" id="sixth" >
+            <div class="head">
+              <h3>Latest Tasks</h3>
+            </div>
+            <div class="info">
+              <div class="task">
+                <div class="text">
+                  <h3>Record One New Video</h3>
+                  <p>Record Python Create Exe Project</p>
+                </div>
+                <i class="fa-solid fa-trash-can fa-fw"></i>
+              </div>
+              <div class="task">
+                <div class="text">
+                  <h3>Write Article</h3>
+                  <p>Write Low Level Vs High Level langauges</p>
+                </div>
+                <i class="fa-solid fa-trash-can fa-fw"></i>
+              </div>
+              <div class="task">
+                <div class="text">
+                  <h3>Finish Project</h3>
+                  <p>Publish Academy Programming Project</p>
+                </div>
+                <i class="fa-solid fa-trash-can fa-fw"></i>
+              </div>
+              <div class="task" id="none">
+                <div class="text">
+                  <h3>Attend The Meeting</h3>
+                  <p>Attend The Project Business Analisis Meeting</p>
+                </div>
+                <i class="fa-solid fa-trash-can fa-fw"></i>
+              </div>
+              <div class="task">
+                <div class="text">
+                  <h3>Finish Lesson</h3>
+                  <p>FinishTeaching Flex Box</p>
+                </div>
+                <i class="fa-solid fa-trash-can fa-fw"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card card-style" id="seventh" >
+            <div class="head">
+              <h3>Top Search Items</h3>
+            </div>
+            <div class="info">
+              <div class="title">
+                <h3>Keyword</h3>
+                <h3>Search Count</h3>
+              </div>
+              <ul class="items">
+                <li>
+                  <p>Programming</p>
+                  <p class="count">220</p>
+                </li>
+                <li>
+                  <p>Javascript</p>
+                  <p class="count">180</p>
+                </li>
+                <li>
+                  <p>PHP</p>
+                  <p class="count">160</p>
+                </li>
+                <li>
+                  <p>Code</p>
+                  <p class="count">145</p>
+                </li>
+                <li>
+                  <p>Design</p>
+                  <p class="count">110</p>
+                </li>
+                <li>
+                  <p>Logic</p>
+                  <p class="count">95</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card card-style" id="eighth" >
+            <div class="head">
+              <h3>Latest Uploads</h3>
+            </div>
+            <div class="info">
+              <ul class="items">
+                <li>
+                  <div class="file">
+                    <img src="../practice 24/images/pdf.svg" alt="">
+                    <div class="text">
+                      <p class="file-name">my-file.pdf</p>
+                      <p>Elzero</p>
+                    </div>
+                  </div>
+                  <p class="count">2.9mb</p>
+                </li>
+                <li>
+                  <div class="file">
+                    <img src="../practice 24/images/avi.svg" alt="">
+                    <div class="text">
+                      <p class="file-name">My-Video-File.avi</p>
+                      <p>Admin</p>
+                    </div>
+                  </div>
+                  <p class="count">4.9mb</p>
+                </li>
+                <li>
+                  <div class="file">
+                    <img src="../practice 24/images/psd.svg" alt="">
+                    <div class="text">
+                      <p class="file-name">My-Psd-File.pdf</p>
+                      <p>Osama</p>
+                    </div>
+                  </div>
+                  <p class="count">4.5mb</p>
+                </li>
+                <li>
+                  <div class="file">
+                    <img src="../practice 24/images/zip.svg" alt="">
+                    <div class="text">
+                      <p class="file-name">My-Zip-File.pdf</p>
+                      <p>User</p>
+                    </div>
+                  </div>
+                  <p class="count">8.9mb</p>
+                </li>
+                <li>
+                  <div class="file">
+                    <img src="../practice 24/images/dll.svg" alt="">
+                    <div class="text">
+                      <p class="file-name">My-DLL-File.pdf</p>
+                      <p>Admin</p>
+                    </div>
+                  </div>
+                  <p class="count">4.9mb</p>
+                </li>
+                <li class="last">
+                  <div class="file">
+                    <img src="../practice 24/images/eps.svg" alt="">
+                    <div class="text">
+                      <p class="file-name">My-Eps-File.pdf</p>
+                      <p>Designer</p>
+                    </div>
+                  </div>
+                  <p class="count">8.9mb</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card card-style" id="nineth" >
+            <div class="head">
+              <h3>Last Project Progress</h3>
+            </div>
+            <div class="info">
+              <ul>
+                <li>
+                  <p>Got The Project</p>
+                </li>
+                <li>
+                  <p>Started The Project</p>
+                </li>
+                <li>
+                  <p>The Project About To Finish</p>
+                </li>
+                <li class="active bcol-none">
+                  <p>Test The Project</p>
+                </li>
+                <li class="not-reached">
+                  <p>Finish The Project & Get Money</p>
+                </li>
+              </ul>
+              <img src="../practice 24/images/project.png" alt="">
+            </div>
+          </div>
+          <div class="card card-style" id="tenth" >
+            <div class="head">
+              <h3>Reminders</h3>
+            </div>
+            <div class="info">
+              <ul>
+                <li class="one">
+                  <h3>Check My Tasks List</h3>
+                  <p>28/09/2022 - 12:00am</p>
+                </li>
+                <li class="two">
+                  <h3>Check My Projects</h3>
+                  <p>26/10/2022 - 12:00am</p>
+                </li>
+                <li class="three">
+                  <h3>Check My Clients</h3>
+                  <p>05/11/2022 - 12:00am</p>
+                </li>
+                <li class="four">
+                  <h3>Finish The Development Workshop</h3>
+                  <p>20/12/2022 - 12:00am</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card card-style" id="eleventh" >
+            <div class="head">
+              <h3>Latest Post</h3>
+            </div>
+            <div class="info">
+              <div class="head">
+                <img src="../practice 24/images/avatar.png" alt="">
+                <div class="details">
+                  <h3>Osama Elzero</h3>
+                  <p>About 3 Hours Ago</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>You Can Fool All Of The People Some Of The Time, And Some Of The People All Of The Time, But You Can't Fool All Of The People All Of The Time.</p>
+              </div>
+              <div class="stats">
+                <div class="stat">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>1.8K</p>
+                </div>
+                <div class="stat">
+                  <i class="fa-regular fa-comments"></i>
+                  <p>500</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="card card-style" id="twelveth" >
+          <div class="head">
+            <h3>Social Media Stats</h3>
+          </div>
+          <div class="info">
+            <ul class="socials">
+              <li class="twitter">
+                <div class="social">
+                  <i class="fa-brands fa-twitter"></i>
+                  <p>90K Followers</p>
+                </div>
+                <button class="btn">Follow</button>
+              </li>
+              <li class="facebook">
+                <div class="social">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <p>2M Like</p>
+                </div>
+                <button class="btn">Like</button>
+              </li>
+              <li class="youtube">
+                <div class="social">
+                  <i class="fa-brands fa-youtube"></i>
+                  <p>1M Subs</p>
+                </div>
+                <button class="btn">Subscribe</button>
+              </li>
+              <li class="linked-in">
+                <div class="social">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <p>70K Followers</p>
+                </div>
+                <button class="btn">Follow</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card card-style" id="last" >
+          <div class="head">
+            <h3>Social Media Stats</h3>
+          </div>
+          <div class="info">
+            <table>
+              <thead>
+                <tr>
+                  <td>Name</td>
+                  <td>Finish Date</td>
+                  <td>Client</td>
+                  <td>Price</td>
+                  <td>Team</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td>10 May 2022</td>
+                  <td>Ministry</td>
+                  <td>$5300</td>
+                  <td class="td-img">
+                    <img src="../practice 24/images/team-01.png" alt="">
+                    <img src="../practice 24/images/team-02.png" alt="">
+                    <img src="../practice 24/images/team-03.png" alt="">
+                    <img src="../practice 24/images/team-04.png" alt="">
+                  </td>
+                  <td><button class="btn bg-orange">Pending</button></td>
+                </tr>
+                <tr>
+                  <td>Elzero Shop</td>
+                  <td>12 Oct 2021</td>
+                  <td>Elzero Company</td>
+                  <td>$1500</td>
+                  <td class="td-img">
+                    <img src="../practice 24/images/team-01.png" alt="">
+                    <img src="../practice 24/images/team-02.png" alt="">
+                    <img src="../practice 24/images/team-03.png" alt="">
+                  </td>
+                  <td><button class="btn bg-blue">In Progress</button></td>
+                </tr>
+                <tr>
+                  <td>Bouba App</td>
+                  <td>05 Sep 2021</td>
+                  <td>05 Sep 2021</td>
+                  <td>$800</td>
+                  <td class="td-img">
+                    <img src="../practice 24/images/team-01.png" alt="">
+                    <img src="../practice 24/images/team-02.png" alt="">
+                  </td>
+                  <td><button class="btn bg-green">Completed</button></td>
+                </tr>
+                <tr>
+                  <td>Completed</td>
+                  <td>22 May 2021</td>
+                  <td>Mahmoud</td>
+                  <td>$600</td>
+                  <td class="td-img">
+                    <img src="../practice 24/images/team-01.png" alt="">
+                    <img src="../practice 24/images/team-02.png" alt="">
+                  </td>
+                  <td><button class="btn bg-green">Completed</button></td>
+                </tr>
+                <tr>
+                  <td>Sayed Website</td>
+                  <td>24 May 2021</td>
+                  <td>Sayed</td>
+                  <td>$300</td>
+                  <td class="td-img">
+                    <img src="../practice 24/images/team-01.png" alt="">
+                    <img src="../practice 24/images/team-02.png" alt="">
+                  </td>
+                  <td><button class="btn bg-red">Rejected</button></td>
+                </tr>
+                <tr>
+                  <td>Arena Application	</td>
+                  <td>01 Mar 2021	</td>
+                  <td>Arena Company</td>
+                  <td>$2600</td>
+                  <td class="td-img">
+                    <img src="../practice 24/images/team-01.png" alt="">
+                    <img src="../practice 24/images/team-02.png" alt="">
+                    <img src="../practice 24/images/team-03.png" alt="">
+                    <img src="../practice 24/images/team-04.png" alt="">
+                  </td>
+                  <td><button class="btn bg-green">Completed</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
